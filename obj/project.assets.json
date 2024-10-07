@@ -1246,11 +1246,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anasz\\Zero\\Development\\Backend\\dotnetmongo\\dotnetmongo.csproj",
+      "projectUniqueName": "C:\\Users\\anasz\\Zero\\Development\\Backend\\.Net-MongoDb\\dotnetmongo.csproj",
       "projectName": "dotnetmongo",
-      "projectPath": "C:\\Users\\anasz\\Zero\\Development\\Backend\\dotnetmongo\\dotnetmongo.csproj",
+      "projectPath": "C:\\Users\\anasz\\Zero\\Development\\Backend\\.Net-MongoDb\\dotnetmongo.csproj",
       "packagesPath": "C:\\Users\\anasz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anasz\\Zero\\Development\\Backend\\dotnetmongo\\obj\\",
+      "outputPath": "C:\\Users\\anasz\\Zero\\Development\\Backend\\.Net-MongoDb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anasz\\AppData\\Roaming\\NuGet\\NuGet.Config"

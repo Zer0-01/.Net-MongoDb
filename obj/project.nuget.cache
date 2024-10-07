@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S93/lEPOUBE=",
+  "dgSpecHash": "Z6yxp06zRts=",
   "success": true,
-  "projectFilePath": "C:\\Users\\anasz\\Zero\\Development\\Backend\\dotnetmongo\\dotnetmongo.csproj",
+  "projectFilePath": "C:\\Users\\anasz\\Zero\\Development\\Backend\\.Net-MongoDb\\dotnetmongo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anasz\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\anasz\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

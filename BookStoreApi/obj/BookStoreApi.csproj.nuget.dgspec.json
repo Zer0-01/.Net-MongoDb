@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anasz\\Zero\\Development\\Backend\\dotnet-mongodb\\BookStoreApi\\BookStoreApi.csproj": {}
+    "c:\\Users\\anasz\\Zero\\Development\\Backend\\dotnet-mongodb\\BookStoreApi\\BookStoreApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anasz\\Zero\\Development\\Backend\\dotnet-mongodb\\BookStoreApi\\BookStoreApi.csproj": {
+    "c:\\Users\\anasz\\Zero\\Development\\Backend\\dotnet-mongodb\\BookStoreApi\\BookStoreApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anasz\\Zero\\Development\\Backend\\dotnet-mongodb\\BookStoreApi\\BookStoreApi.csproj",
+        "projectUniqueName": "c:\\Users\\anasz\\Zero\\Development\\Backend\\dotnet-mongodb\\BookStoreApi\\BookStoreApi.csproj",
         "projectName": "BookStoreApi",
-        "projectPath": "C:\\Users\\anasz\\Zero\\Development\\Backend\\dotnet-mongodb\\BookStoreApi\\BookStoreApi.csproj",
+        "projectPath": "c:\\Users\\anasz\\Zero\\Development\\Backend\\dotnet-mongodb\\BookStoreApi\\BookStoreApi.csproj",
         "packagesPath": "C:\\Users\\anasz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anasz\\Zero\\Development\\Backend\\dotnet-mongodb\\BookStoreApi\\obj\\",
+        "outputPath": "c:\\Users\\anasz\\Zero\\Development\\Backend\\dotnet-mongodb\\BookStoreApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anasz\\AppData\\Roaming\\NuGet\\NuGet.Config"

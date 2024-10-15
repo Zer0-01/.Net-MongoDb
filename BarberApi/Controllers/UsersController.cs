@@ -8,9 +8,9 @@ namespace BarberApi.Controllers;
 [Route("[controller]")]
 public class UsersController : ControllerBase
 {
-    private readonly BarberService _barberService;
+    private readonly UsersService _barberService;
 
-    public UsersController(BarberService barberService) =>
+    public UsersController(UsersService barberService) =>
     _barberService = barberService;
 
     [HttpGet]

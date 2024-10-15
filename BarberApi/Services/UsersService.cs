@@ -4,11 +4,11 @@ using MongoDB.Driver;
 
 namespace BarberApi.Services;
 
-public class BarberService
+public class UsersService
 {
     private readonly IMongoCollection<User> _usersCollection;
 
-    public BarberService(IOptions<BarberShopDatabaseSettings> barberShopDatabaseSettings)
+    public UsersService(IOptions<BarberShopDatabaseSettings> barberShopDatabaseSettings)
     {
         var mongoClient = new MongoClient(barberShopDatabaseSettings.Value.ConnectionString);
         var mongoDatabase = mongoClient.GetDatabase(barberShopDatabaseSettings.Value.DatabaseName);

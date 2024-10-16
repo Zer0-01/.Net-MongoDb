@@ -6,4 +6,5 @@ public class BarberShopDatabaseSettings
     public string DatabaseName { get; set; } = null!;
     public string UsersCollectionName { get; set; } = null!;
     public string ServicesCollectionName { get; set; } = null!;
+    public string AppointmentsCollectionName { get; set; } = null!;
 }

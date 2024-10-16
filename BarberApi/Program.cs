@@ -7,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<BarberShopDatabaseSettings>(builder.Configuration.GetSection("BarberShopDatabase"));
 builder.Services.AddSingleton<UsersService>();
 builder.Services.AddSingleton<ServicesService>();
+builder.Services.AddSingleton<AppointmentService>();
+builder.Services.AddSingleton<BarberAvailabilityService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

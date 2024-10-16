@@ -21,46 +21,46 @@ public class AppointmentController : ControllerBase
     [HttpGet("{id:length(24)}")]
     public async Task<ActionResult<Appointment>> Get(string id)
     {
-        var Services = await _appointmentService.GetAsync(id);
+        var appointment = await _appointmentService.GetAsync(id);
 
-        if (Services is null)
+        if (appointment is null)
         {
             return NotFound();
         }
 
-        return Services;
+        return appointment;
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post(Appointment newServices)
+    public async Task<IActionResult> Post(Appointment newAppointment)
     {
-        await _appointmentService.CreateAsync(newServices);
+        await _appointmentService.CreateAsync(newAppointment);
 
-        return CreatedAtAction(nameof(Get), new { id = newServices.Id }, newServices);
+        return CreatedAtAction(nameof(Get), new { id = newAppointment.Id }, newAppointment);
     }
 
     [HttpPut("{id:length(24)}")]
-    public async Task<IActionResult> Update(string id, Appointment updatedServices)
+    public async Task<IActionResult> Update(string id, Appointment updatedApointment)
     {
-        var Services = await _appointmentService.GetAsync(id);
+        var appointment = await _appointmentService.GetAsync(id);
 
-        if (Services is null)
+        if (appointment is null)
         {
             return NotFound();
         }
 
-        updatedServices.Id = Services.Id;
+        updatedApointment.Id = appointment.Id;
 
-        await _appointmentService.UpdateAsync(id, updatedServices);
+        await _appointmentService.UpdateAsync(id, updatedApointment);
         return NoContent();
     }
 
     [HttpDelete("{id:length(24)}")]
     public async Task<IActionResult> Delete(string id)
     {
-        var Services = await _appointmentService.GetAsync(id);
+        var appointment = await _appointmentService.GetAsync(id);
 
-        if (Services is null)
+        if (appointment is null)
         {
             return NotFound();
         }

@@ -21,14 +21,14 @@ public class ServicesController : ControllerBase
     [HttpGet("{id:length(24)}")]
     public async Task<ActionResult<Service>> Get(string id)
     {
-        var Services = await _barberService.GetAsync(id);
+        var service = await _barberService.GetAsync(id);
 
-        if (Services is null)
+        if (service is null)
         {
             return NotFound();
         }
 
-        return Services;
+        return service;
     }
 
     [HttpPost]
@@ -42,14 +42,14 @@ public class ServicesController : ControllerBase
     [HttpPut("{id:length(24)}")]
     public async Task<IActionResult> Update(string id, Service updatedServices)
     {
-        var Services = await _barberService.GetAsync(id);
+        var service = await _barberService.GetAsync(id);
 
-        if (Services is null)
+        if (service is null)
         {
             return NotFound();
         }
 
-        updatedServices.Id = Services.Id;
+        updatedServices.Id = service.Id;
 
         await _barberService.UpdateAsync(id, updatedServices);
         return NoContent();
@@ -58,9 +58,9 @@ public class ServicesController : ControllerBase
     [HttpDelete("{id:length(24)}")]
     public async Task<IActionResult> Delete(string id)
     {
-        var Services = await _barberService.GetAsync(id);
+        var service = await _barberService.GetAsync(id);
 
-        if (Services is null)
+        if (service is null)
         {
             return NotFound();
         }

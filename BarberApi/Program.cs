@@ -1,9 +1,20 @@
 using BarberApi.Models;
 using BarberApi.Services;
 
+var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy  =>
+                      {
+                          policy.WithOrigins("*");
+                      });
+});
 builder.Services.Configure<BarberShopDatabaseSettings>(builder.Configuration.GetSection("BarberShopDatabase"));
 builder.Services.AddSingleton<UsersService>();
 builder.Services.AddSingleton<ServicesService>();
@@ -24,6 +35,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
